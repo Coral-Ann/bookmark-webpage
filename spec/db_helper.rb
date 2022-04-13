@@ -6,6 +6,6 @@ def truncate_database
 end
 
 def add_test_bookmarks
-  Bookmark.create('https://devhints.io/rspec')
-  Bookmark.create('https://devhints.io/capybara')
+  Bookmark.create('https://devhints.io/rspec', 'rspec cheatsheet')
+  Bookmark.create('https://devhints.io/capybara', 'capybara cheatsheet')
 end
