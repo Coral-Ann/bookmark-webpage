@@ -38,12 +38,22 @@ I want to restrict users to manage their own bookmarks only
 
 [click here](https://excalidraw.com/#json=-TV9lO1UOlT2AKSrsiS1j,i_WiZKJIJeezEZMtTgTcwA) to view domain model 
 
-## To set up the database
+## To set up the bookmark manager database
 
 Connect to `psql` and create the `bookmark_manager` database:
 
 ```
 CREATE DATABASE bookmark_manager;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+
+## To set up the test database
+
+Connect to `psql` and create the `bookmark_manager_test` database:
+
+```
+CREATE DATABASE bookmark_manager_test;
 ```
 
 To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
